@@ -1,7 +1,6 @@
 package com.lhl.Controller;
 
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -12,7 +11,7 @@ import java.io.IOException;
  * @Title: javaDay01
  * @date 2018/10/24 16:40
  */
-@WebServlet(urlPatterns = "/login" ,name = "login")
+
 public class LoginServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
