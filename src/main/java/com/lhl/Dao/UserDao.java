@@ -13,6 +13,6 @@ public interface UserDao  {
      * @param username
      * @return User
      */
-    public abstract User getUser(String username);
+    public User getUser(String username,String password);
 
 }

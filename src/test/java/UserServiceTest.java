@@ -33,9 +33,9 @@ public void testGetUser() throws Exception {
     String name="admin";
     String password="admin";
     UserService userService=new UserService();
-    User user= userService.getUser(name);
+    User user= userService.Login(name,password);
     System.out.println(user.getName()+" "+user.getPassword());
-    if(user != null&&user.getPassword().equals(password)){
+    if(user != null){
         System.out.println("µÇÂ¼³É¹¦£¡");
     }else{
         System.out.println("µÇÂ¼Ê§°Ü£¡");

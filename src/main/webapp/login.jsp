@@ -44,7 +44,7 @@
     <div class="login-box-body">
         <p class="login-box-msg">请输入您的账号密码</p>
 
-        <form action="/login" method="post">
+        <form action="${pageContext.request.contextPath}/login" method="post">
             <div class="form-group has-feedback">
                 <input type="name" class="form-control" placeholder="姓名" id="name" name="name">
                 <span class="glyphicon glyphicon-user form-control-feedback"></span>
@@ -55,7 +55,7 @@
             </div>
             <div class="row">
                 <div class="col-xs-8">
-
+                ${loginInfo}
                 </div>
                 <!-- /.col -->
                 <div class="col-xs-4">

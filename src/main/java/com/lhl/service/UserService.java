@@ -14,8 +14,8 @@ public class UserService {
     public UserService() {
     }
 
-    public User getUser(String username){
+    public User Login(String username,String password){
         UserDao userDao=new UserDaoImpl();
-        return userDao.getUser(username);
+        return userDao.getUser(username,password);
     }
 }
