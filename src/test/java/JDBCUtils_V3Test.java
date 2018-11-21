@@ -1,13 +1,11 @@
 package com.lhl.jdbc; 
 
-import org.junit.Test; 
+import com.lhl.utils.JDBCUtils_V3;
+import org.junit.Test;
 import org.junit.Before; 
 import org.junit.After;
 
 import java.sql.Connection;
-
-import static com.lhl.jdbc.JDBCUtils_V3.getConnection;
-import static javafx.scene.input.KeyCode.J;
 
 /** 
 * JDBCUtils_V3 Tester. 

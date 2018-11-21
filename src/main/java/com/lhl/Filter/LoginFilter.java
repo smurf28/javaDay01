@@ -15,6 +15,10 @@ import java.net.URLDecoder;
  * Created by artsing on 2018/11/2.
  */
 public class LoginFilter implements Filter {
+    public void init(FilterConfig filterConfig) throws ServletException {
+
+    }
+
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         servletRequest.setCharacterEncoding("UTF-8");
         System.out.println("开始执行doFilter");
@@ -35,5 +39,9 @@ public class LoginFilter implements Filter {
             filterChain.doFilter(servletRequest, servletResponse);
         }
         System.out.println("======= 结束执行doFilter ========");
+    }
+
+    public void destroy() {
+
     }
 }

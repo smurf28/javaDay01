@@ -27,13 +27,9 @@ public class UserServlet extends HttpServlet {
         String password=req.getParameter("password");
         UserService userService=new UserService();
         User user= userService.Login(name,password);
-//        User user=new User("admin","admin");
-        // 如果不存在 session 会话，则创建一个 session 对象
+
         HttpSession session = req.getSession(true);
-        // 获取 session 创建时间
-//        Date createTime = new Date(session.getCreationTime());
-        // 获取该网页的最后一次访问时间
-//        Date lastAccessTime = new Date(session.getLastAccessedTime());
+
         session.setMaxInactiveInterval(10000);
 
         if(user != null){

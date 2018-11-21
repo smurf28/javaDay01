@@ -1,7 +1,7 @@
 package com.lhl.Dao.Impl;
 
 import com.lhl.Dao.BaseDao;
-import com.lhl.jdbc.JDBCUtils_V3;
+import com.lhl.utils.JDBCUtils_V3;
 import com.lhl.utils.ReflectionUtils;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;

@@ -6,7 +6,7 @@ package com.lhl.model;
  * @date 2018/10/25 19:30
  */
 public class User {
-    private int id;
+    private Integer id;
     private String name;
     private String password;
 
@@ -18,11 +18,11 @@ public class User {
     public User() {
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

@@ -1,4 +1,4 @@
-package com.lhl.jdbc;
+package com.lhl.utils;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
