@@ -17,8 +17,8 @@ public class BeanTestTest {
     public void printHello() throws Exception {
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         BeanTest obj = (BeanTest) context.getBean("BeanTest");
-        UserService Usersevice = (UserService) context.getBean("Usersevice");
-        Usersevice.Login("admin","admin");
+//        UserService Usersevice = (UserService) context.getBean("Usersevice");
+//        Usersevice.Login("admin","admin");
         System.out.println(obj);
     }
 

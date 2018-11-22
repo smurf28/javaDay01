@@ -12,7 +12,7 @@ import javax.annotation.Resource;
 @Component("BeanTest")
 public class BeanTest {
     private String name;
-    @Resource(name = "")
+    @Resource(name = "User")
     private User user;
     public BeanTest(String name, User user) {
         this.name = name;

@@ -1,10 +1,13 @@
 package com.lhl.model;
 
+import org.springframework.stereotype.Component;
+
 /**
  * @author lhl28
  * @Title: javaDay01
  * @date 2018/10/25 19:30
  */
+@Component("User")
 public class User {
     private Integer id;
     private String name;
