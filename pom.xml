@@ -8,6 +8,8 @@
     <artifactId>javaDay01</artifactId>
     <version>1.0-SNAPSHOT</version>
 <dependencies>
+
+    <!--连接池-->
     <!-- https://mvnrepository.com/artifact/c3p0/c3p0 -->
     <dependency>
         <groupId>c3p0</groupId>
@@ -20,25 +22,30 @@
         <artifactId>commons-pool</artifactId>
         <version>1.6</version>
     </dependency>
-
-    <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
-    <dependency>
-        <groupId>mysql</groupId>
-        <artifactId>mysql-connector-java</artifactId>
-        <version>5.1.38</version>
-    </dependency>
-    <dependency>
-        <groupId>junit</groupId>
-        <artifactId>junit</artifactId>
-        <version>RELEASE</version>
-        <scope>test</scope>
-    </dependency>
     <!-- https://mvnrepository.com/artifact/commons-dbutils/commons-dbutils -->
     <dependency>
         <groupId>commons-dbutils</groupId>
         <artifactId>commons-dbutils</artifactId>
         <version>1.6</version>
     </dependency>
+
+    <!--数据库-->
+    <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+    <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>5.1.38</version>
+    </dependency>
+
+    <!--测试-->
+    <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>RELEASE</version>
+        <scope>test</scope>
+    </dependency>
+
+    <!--spring相关-->
     <!-- Spring Core -->
     <!-- http://mvnrepository.com/artifact/org.springframework/spring-core -->
     <dependency>
@@ -52,6 +59,12 @@
     <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-context</artifactId>
+        <exclusions>
+            <exclusion>
+                <groupId>commons-logging</groupId>
+                <artifactId>commons-logging</artifactId>
+            </exclusion>
+        </exclusions>
         <version>4.1.4.RELEASE</version>
     </dependency>
     <!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
@@ -67,7 +80,16 @@
         <version>4.1.4.RELEASE</version>
         <scope>test</scope>
     </dependency>
-
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-aspects</artifactId>
+        <version>4.1.4.RELEASE</version>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-test</artifactId>
+        <version>4.1.4.RELEASE</version>
+    </dependency>
 </dependencies>
 
 </project>
