@@ -82,7 +82,7 @@
     <dependency>
         <groupId>log4j</groupId>
         <artifactId>log4j</artifactId>
-        <version>1.2.7</version>
+        <version>1.2.12</version>
     </dependency>
 
     <dependency>
@@ -102,7 +102,7 @@
     <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
-        <version>RELEASE</version>
+        <version>4.11</version>
         <scope>test</scope>
     </dependency>
 

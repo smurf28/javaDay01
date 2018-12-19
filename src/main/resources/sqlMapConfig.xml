@@ -3,34 +3,35 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
-    <!--<properties resource="db.properties"/>-->
+    <properties resource="db.properties"></properties>
     <!--&lt;!&ndash; 别名 包以其子包下所有类   头字母大小都行&ndash;&gt;-->
     <!--<typeAliases>-->
-        <!--&lt;!&ndash; 		<typeAlias type="com.itheima.mybatis.pojo.User" alias="User"/> &ndash;&gt;-->
-        <!--<package name="com.lhl.model.My_user"/>-->
+    <!--&lt;!&ndash; 		<typeAlias type="com.itheima.mybatis.pojo.User" alias="User"/> &ndash;&gt;-->
+    <!--<package name="com.lhl.model.My_user"/>-->
     <!--</typeAliases>-->
     <!-- 和spring整合后 environments配置将废除    -->
     <environments default="development">
         <environment id="development">
             <!-- 使用jdbc事务管理 -->
-            <transactionManager type="JDBC" />
+            <transactionManager type="JDBC"/>
             <!-- 数据库连接池 -->
             <dataSource type="POOLED">
-                <property name="driver" value="com.mysql.jdbc.Driver" />
-                <property name="url"
-                          value="jdbc:mysql://localhost:3306/web17?characterEncoding=utf8" />
-                <property name="username" value="root" />
-                <property name="password" value="123456" />
+                <property name="url" value="${jdbc.url}"></property>
+                <property name="driver" value="${jdbc.driver}"></property>
+                <property name="username" value="${jdbc.username}"></property>
+                <property name="password" value="${jdbc.password}"></property>
             </dataSource>
         </environment>
     </environments>
 
     <!-- Mapper的位置  Mapper.xml 写Sql语句的文件的位置 -->
     <mappers>
-         		<mapper resource="com/lhl/Dao/My_user.xml"/>
-        <!-- 		<mapper resource="sqlmap/User.xml" class="" url=""/> -->
-        <!-- 		<mapper class="com.itheima.mybatis.mapper.UserMapper" /> -->
+        <!--1.xml配置-->
+        <!--<mapper resource="com/lhl/Dao/My_user.xml"/>-->
+        <!--2.xml文件名称和mapper文件名称一样，并且在一个包下-->
+        <!--<mapper class="com.lhl.mapper.My_UserMapper" />-->
         <!-- 		<mapper url="" /> -->
-        <!--<package name="mapper"/>-->
+        <!--3.直接用包 xml文件名称和mapper文件名称一样，并且在一个包下-->
+        <package name="com.lhl.mapper"/>
     </mappers>
 </configuration>
