@@ -15,7 +15,7 @@ import org.apache.ibatis.io.Resources;
  */
 public class MybatisTest {
 
-    //≤È—Ø
+    //≤È—Ø123
     @Test
     public void testMybatis() throws Exception{
         String resoure = "sqlMapConfig.xml";
