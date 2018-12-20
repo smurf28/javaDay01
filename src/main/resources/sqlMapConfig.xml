@@ -27,7 +27,7 @@
     <!-- Mapper的位置  Mapper.xml 写Sql语句的文件的位置 -->
     <mappers>
         <!--1.xml配置-->
-        <!--<mapper resource="com/lhl/Dao/My_user.xml"/>-->
+        <!--<mapper resource="com/lhl/mapper/My_UserMapper.xml"/>-->
         <!--2.xml文件名称和mapper文件名称一样，并且在一个包下-->
         <!--<mapper class="com.lhl.mapper.My_UserMapper" />-->
         <!-- 		<mapper url="" /> -->

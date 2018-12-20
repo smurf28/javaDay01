@@ -25,7 +25,7 @@ public class MybatisMapperTest {
         SqlSession sqlSession= sqlSessionFactory.openSession();
         //Ö´ÐÐÓï¾ä
         My_UserMapper userMapper = sqlSession.getMapper(My_UserMapper.class);
-        My_user user= userMapper.findUserById(10);
+        My_user user= userMapper.findUserById(1);
         System.out.println(user);
     }
 }

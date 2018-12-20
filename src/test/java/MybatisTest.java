@@ -24,7 +24,7 @@ public class MybatisTest {
         SqlSessionFactory sqlSessionFactory= sqlSessionFactoryBuilder.build(in);
         SqlSession sqlSession= sqlSessionFactory.openSession();
         //Ö´ÐÐÓï¾ä
-        My_user user = sqlSession.selectOne("mapper.UserMapper.findUserById", 10);
+        My_user user = sqlSession.selectOne("com.lhl.mapper.My_UserMapper.findUserById", 1);
         System.out.println(user);
     }
 
@@ -38,10 +38,10 @@ public class MybatisTest {
         SqlSession sqlSession= sqlSessionFactory.openSession();
         //Ö´ÐÐÓï¾ä
         My_user user =new My_user();
-        user.setUsername("lhl");
+        user.setUsername("lhl2");
         user.setBirthday(new Date());
         user.setSex("Å®");
-        int i= sqlSession.insert("mapper.UserMapper.insertUser", user);
+        int i= sqlSession.insert("com.lhl.mapper.My_UserMapper.insertUser", user);
         sqlSession.commit();
 
         //·µ»Ø±£´æµÄid
@@ -62,7 +62,7 @@ public class MybatisTest {
         user.setUsername("lhl3");
         user.setBirthday(new Date());
         user.setSex("ÄÐ");
-        int i= sqlSession.update("mapper.UserMapper.updateUserById", user);
+        int i= sqlSession.update("com.lhl.mapper.My_UserMapper.updateUserById", user);
         sqlSession.commit();
         System.out.println(i);
     }
@@ -76,7 +76,7 @@ public class MybatisTest {
         SqlSessionFactory sqlSessionFactory= sqlSessionFactoryBuilder.build(in);
         SqlSession sqlSession= sqlSessionFactory.openSession();
         //Ö´ÐÐÓï¾ä
-        sqlSession.delete("mapper.UserMapper.deleteUserById", 27);
+        sqlSession.delete("com.lhl.mapper.My_UserMapper.deleteUserById", 27);
         sqlSession.commit();
     }
 }

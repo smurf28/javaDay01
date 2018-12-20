@@ -38,13 +38,14 @@ public void after() throws Exception {
 * 
 */ 
 @Test
-public void testGetUser() throws Exception { 
-//TODO: Test goes here...
+public void testGetUser() throws Exception {
 
 //    String name="admin";
 //    String password="admin";
 //    UserService userService=new UserService();
-    userDao.getAll();
+    User user=userDao.getById(1);
+    System.out.println(user);
+    System.out.println("------------");
 //    User user= userService.Login(name,password);
 //    System.out.println(user.getName()+" "+user.getPassword());
 //    if(user != null){

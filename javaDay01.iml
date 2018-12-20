@@ -23,7 +23,7 @@
       </configuration>
     </facet>
   </component>
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_5" inherit-compiler-output="false">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_5">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
@@ -34,7 +34,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="PROVIDED" name="Tomcat 9.0.0.M18" level="application_server_libraries" />
+    <orderEntry type="library" exported="" scope="PROVIDED" name="Tomcat 9.0.0.M18" level="application_server_libraries" />
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
@@ -44,8 +44,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" scope="PROVIDED" name="Tomcat 7.0.75" level="application_server_libraries" />
-    <orderEntry type="library" exported="" scope="PROVIDED" name="Tomcat 7" level="application_server_libraries" />
+    <orderEntry type="library" exported="" scope="PROVIDED" name="Tomcat 7.0.75" level="application_server_libraries" />
     <orderEntry type="library" name="Maven: c3p0:c3p0:0.9.1.2" level="project" />
     <orderEntry type="library" name="Maven: commons-pool:commons-pool:1.6" level="project" />
     <orderEntry type="library" name="Maven: commons-dbutils:commons-dbutils:1.6" level="project" />
